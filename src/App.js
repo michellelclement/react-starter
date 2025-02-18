@@ -7,13 +7,13 @@ import CreateTweet from "./components/CreateTweet";
 import TweetList from "./components/TweetList";
 
 function App() {
-  const name = "Michelle";
+  const [name, setName] = useState("Michelle");
   const message = "Hello this is a tweet";
 
   return (
     <div>
       <CreateTweet />
-      <TweetList name={name} message={message} />
+      <TweetList setName={setName} name={name} message={message} />
     </div>
   );
 }
