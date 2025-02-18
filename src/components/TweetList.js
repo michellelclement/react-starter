@@ -4,13 +4,13 @@ import Tweet from "./Tweet";
 const TweetList = ({ name, tweets, setTweets }) => {
   return (
     <div className="tweet-list">
-      {tweets.map((tweet, index) => (
+      {tweets.map((tweet) => (
         <Tweet
           setTweets={setTweets}
-          key={index}
           name={name}
           tweet={tweet}
           tweets={tweets}
+          key={tweet.id}
         />
       ))}
     </div>
