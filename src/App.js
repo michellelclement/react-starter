@@ -2,6 +2,7 @@
 import TestComponent from "./TestComponent";
 import Tweet from "./components/Tweet";
 import CreateTweet from "./components/CreateTweet";
+import TweetList from "./components/TweetList";
 
 function App() {
   const name = "Michelle";
@@ -12,7 +13,7 @@ function App() {
       <h1>Hello React</h1>
       {/* <TestComponent /> */}
       <CreateTweet />
-      <Tweet name={name} message={message} />
+      <TweetList name={name} message={message} />
     </div>
   );
 }
