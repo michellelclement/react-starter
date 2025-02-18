@@ -10,10 +10,18 @@ function App() {
   const [name, setName] = useState("Michelle");
   const message = "Hello this is a tweet";
 
+  const [textInput, setTextInput] = useState("");
+  const [tweets, setTweets] = useState([]);
+
   return (
     <div>
-      <CreateTweet />
-      <TweetList setName={setName} name={name} message={message} />
+      <CreateTweet
+        textInput={textInput}
+        setTextInput={setTextInput}
+        tweets={tweets}
+        setTweets={setTweets}
+      />
+      <TweetList setName={setName} name={name} tweets={tweets} />
     </div>
   );
 }
