@@ -23,7 +23,7 @@ const CreateTweet = ({ tweets, setTweets, textInput, setTextInput }) => {
         id=""
       ></textarea>
       <button>Submit</button>
-      <h1>{textInput}</h1>
+      {/* <h1>{textInput}</h1> */}
     </form>
   );
 };
