@@ -7,19 +7,13 @@ import CreateTweet from "./components/CreateTweet";
 import TweetList from "./components/TweetList";
 
 function App() {
-  const [name, setName] = useState("Michelle");
-
-  const sayHelloHandler = (e) => {
-    setName("Lennon");
-  };
+  const name = "Michelle";
+  const message = "Hello this is a tweet";
 
   return (
     <div>
-      <h1>Hello {name}</h1>
-      <button onClick={sayHelloHandler}>Click</button>
-      {/* <TestComponent /> */}
-      {/* <CreateTweet /> */}
-      {/* <TweetList name={name} message={message} /> */}
+      <CreateTweet />
+      <TweetList name={name} message={message} />
     </div>
   );
 }
