@@ -8,12 +8,17 @@ function App() {
   const name = "Michelle";
   const message = "This is the tweet";
 
+  const sayHelloHandler = (e) => {
+    console.log(e);
+  };
+
   return (
     <div>
       <h1>Hello React</h1>
+      <button onClick={sayHelloHandler}>Click</button>
       {/* <TestComponent /> */}
-      <CreateTweet />
-      <TweetList name={name} message={message} />
+      {/* <CreateTweet />
+      <TweetList name={name} message={message} /> */}
     </div>
   );
 }
