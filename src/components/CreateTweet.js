@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { v4 as uuidv4 } from "uuid";
 
 const CreateTweet = ({ tweets, setTweets, textInput, setTextInput }) => {
@@ -24,7 +24,6 @@ const CreateTweet = ({ tweets, setTweets, textInput, setTextInput }) => {
         id=""
       ></textarea>
       <button>Submit</button>
-      {/* <h1>{textInput}</h1> */}
     </form>
   );
 };
